@@ -1,6 +1,23 @@
 Market Informed Demand Automation Server (MIDAS) Documentation
 ==============================================================
 
+# Updates
+
+## MIDAS 1.5
+
+1. GET:
+    * No registration required for GET Requests
+    * Realtime query returns 72 hours of data starting from 00:00:00 am on the day of querry
+    * Alldata query returns 90 days of data ending at the same time as realtime query (i.e. 11:59:59 pm of day+2 where 'day' is the date of query made
+    * Token is  now valid for 3600 seconds instead of 600 seconds.
+    * No HistoricalRINList Endpoint
+    * No Holiday Endpoint
+    * Fewer RINs and updated API parameters for CAISO and WattTime querries
+  
+2. POST:
+    * Everyone with the current POST access to MIDAS will need to re-register and re-verify the email
+    * Two level data validation - API HTTPS Response and Email Response
+
 _Interacting with the MIDAS API_
 
 # Introduction
@@ -30,7 +47,7 @@ Rate Identification Numbers do not change over time. The prices and values may c
 
 ## Rate Information
 
-To fulfill the requirements of the California's load management standards, MIDAS receives and shares information for all time-dependent rates for the three largest investor owned utilities (IOUs), the two largest publicly owned utilities (POUs) and the 14 largest CCAs in California. Time-dependent rates are rates that have prices which vary over the course of a day. Other California utilities and CCAs may use MIDAS to provide information and prices for their rates, but are not required to do so.
+To fulfill the requirements of the California's load management standards, MIDAS receives and shares information for all time-dependent rates for the three largest investor owned utilities (IOUs), the two largest publicly owned utilities (POUs) and the 15 largest CCAs in California. Time-dependent rates are rates that have prices which vary over the course of a day. Other California utilities and CCAs may use MIDAS to provide information and prices for their rates, but are not required to do so.
 
 ## SGIP GHG Emissions
 
