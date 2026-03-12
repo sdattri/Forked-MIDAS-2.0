@@ -36,8 +36,11 @@ Market Informed Demand Automation Server (MIDAS) Documentation
      * Past data upload
      * Data Gap between the latest data point in MIDAS and earliest data point in the new upload
 
-
 <br>
+
+### POST MIDAS 2.0
+<br>
+
 _Interacting with the MIDAS API_
 
 # Introduction
