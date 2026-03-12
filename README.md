@@ -1,34 +1,43 @@
 Market Informed Demand Automation Server (MIDAS) Documentation
 ==============================================================
 
-
+<br>
 <font color="red"><h1>Updates</h1></font>
 
-## MIDAS 1.5
+### MIDAS 2.0
+1.     System Level
+    * Improved speed, uptime and reliability with more advanced AWS storage and computation
+    * Tracking system performance and analytics
+   * More system level health check end points
+  
+     
+3.     GET Requests
 
-1. GET:
-
- * No registration required for GET Requests
-
- * Realtime query returns 72 hours of data starting from 00:00:00 am on the day of querry
-
- * Alldata query returns 90 days of data ending at the same time as realtime query (i.e. 11:59:59 pm of day+2 where 'day' is the date of query made
-
- * Token is now valid for 3600 seconds instead of 600 seconds.
-
- * No HistoricalRINList Endpoint
-
- * No Holiday Endpoint
-
- * Fewer RINs and updated API parameters for CAISO and WattTime querries
-
-2. POST:
-
- * Everyone with the current POST access to MIDAS will need to re-register and re-verify the email
-
- * Two level data validation - API HTTPS Response and Email Response
+   * No registration required for GET Requests
+   * Realtime query returns 72 hours of data starting from 00:00:00 am on the day of querry
+   * Alldata query returns 90 days of data ending at the same time as realtime query (i.e. 11:59:59 pm of day+2 where 'day' is the date of query made
+   * Token is now valid for 3600 seconds instead of 600 seconds.
+   * No HistoricalRINList Endpoint
+   * No Holiday Endpoint
+   * New RINs and updated API parameters for CAISO's Flex Alerts and WattTime GHG emmissions querries
+   * New OpenADR 3.1 compatible endpoints - EventList, Event etc.
+   * Possibly new parameters for RINList endpoint - To distinguish active and all RINs
+   * New system (either a URL or email request) for download data older than 2 years
+   * Data Retention - 2 years worth active + 5 years of historical
 
 
+4.     POST Requests
+
+   * Everyone with the current POST access to MIDAS will need to re-register and re-verify the email
+   * Two level data validation - API HTTPS Response and Email Response
+   * New endpoints for seeking upload access
+   * Allowing multiple Distribution and Energy codes upload access to a single account
+   * Warnings and Tracking:
+     * Past data upload
+     * Data Gap between the latest data point in MIDAS and earliest data point in the new upload
+
+
+<br>
 _Interacting with the MIDAS API_
 
 # Introduction
