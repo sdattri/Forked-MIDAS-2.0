@@ -1,7 +1,8 @@
 Market Informed Demand Automation Server (MIDAS) Documentation
 ==============================================================
 
-# <font "color:Red">Updates</font>
+
+<font color="red"><h1>Updates</h1></font>
 
 ## MIDAS 1.5
 
