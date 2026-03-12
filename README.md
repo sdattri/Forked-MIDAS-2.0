@@ -1,6 +1,33 @@
 Market Informed Demand Automation Server (MIDAS) Documentation
 ==============================================================
 
+# **Updates**
+
+## MIDAS 1.5
+
+1. GET:
+
+ * No registration required for GET Requests
+
+ * Realtime query returns 72 hours of data starting from 00:00:00 am on the day of querry
+
+ * Alldata query returns 90 days of data ending at the same time as realtime query (i.e. 11:59:59 pm of day+2 where 'day' is the date of query made
+
+ * Token is now valid for 3600 seconds instead of 600 seconds.
+
+ * No HistoricalRINList Endpoint
+
+ * No Holiday Endpoint
+
+ * Fewer RINs and updated API parameters for CAISO and WattTime querries
+
+2. POST:
+
+ * Everyone with the current POST access to MIDAS will need to re-register and re-verify the email
+
+ * Two level data validation - API HTTPS Response and Email Response
+
+
 _Interacting with the MIDAS API_
 
 # Introduction
